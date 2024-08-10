@@ -8,7 +8,7 @@ const LeftMenu = () => {
         <img src='https://darkanddarker.wiki.spellsandguns.com/images/c/c9/Dark-and-darker-main.png' alt="Logo do Jogo" className="logo" />
       </div>
       <div className="site-name">
-        Mapa Interativo
+        Mapa Interativo Dark and Darker
       </div>
     </div>
   );

@@ -47,6 +47,33 @@ const mapOptions = [
   // Adicione mais mapas aqui
 ];
 
+const mapVariants = [
+  {id: 'mapvariant1',
+    url: 'https://darkanddarkertracker.com/data/maps/Crypt/Normal/Crypt_01/Crypt_01_P.png',
+    bounds: [[0, 0], [500, 500]],
+    center: [250, 250],
+    label: 'Mapavariant1'
+  },
+  {id: 'mapvariant2',
+  url: 'https://darkanddarkertracker.com/data/maps/Crypt/Normal/Crypt_02/Crypt_02_P.png',
+  bounds: [[0, 0], [500, 500]],
+  center: [250, 250],
+  label: 'Mapavariant1'
+},
+{id: 'mapvariant3',
+  url: 'https://darkanddarkertracker.com/data/maps/Inferno/Normal/Inferno_01/Inferno_01_P.png',
+  bounds: [[0, 0], [500, 500]],
+  center: [250, 250],
+  label: 'Mapavariant1'
+},
+{id: 'mapvariant4',
+  url: 'https://darkanddarkertracker.com/data/maps/Inferno/Normal/Inferno_02/Inferno_02_P.png',
+  bounds: [[0, 0], [500, 500]],
+  center: [250, 250],
+  label: 'Mapavariant1'
+}
+]
+
 const MapComponent = () => {
   const [selectedMap, setSelectedMap] = useState(mapOptions[0]);
   const [imageLoaded, setImageLoaded] = useState(true);
@@ -57,9 +84,13 @@ const MapComponent = () => {
   };
 
   const handleMapChange = (mapId) => {
-    const selected = mapOptions.find(map => map.id === mapId);
-    setSelectedMap(selected);
-    setImageLoaded(true); // Resetar estado de carregamento
+    const selected =
+      mapOptions.find(map => map.id === mapId) ||
+      mapVariants.find(variant => variant.id === mapId);
+    if (selected) {
+      setSelectedMap(selected);
+      setImageLoaded(true);
+    }
   };
 
   const handleMarkersChange = (markers) => {
