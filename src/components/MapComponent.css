@@ -1,0 +1,50 @@
+.map-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+  }
+  
+  .left-menu,
+  .right-menu {
+    flex: 0 0 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  .left-menu {
+    background-color: rgb(51, 60, 73);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .right-menu {
+    background-color: rgb(51, 60, 73);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .map-wrapper {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .map-button {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .map-button:hover {
+    background-color: #0056b3;
+  }
+  
