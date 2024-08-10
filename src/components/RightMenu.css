@@ -1,0 +1,300 @@
+/* Estilos gerais para o menu */
+
+.mapchoices{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu h3 {
+  display: flex;
+    align-items: center;
+    margin: 16px 0;
+    color: rgba(238, 238, 238, 0.85);
+    font-weight: 500;
+    font-size: 16px;
+    white-space: nowrap;
+    text-align: center;
+    border-block-start: 0 rgba(172, 202, 247, 0.19);
+}
+
+.Crypt{
+  background: rgba(146, 113, 67, 0.3); 
+  color: rgba(255, 255, 255, 0.4); 
+  border-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Inferno{
+  background: rgba(95, 5, 5, 0.3); 
+  color: rgba(255, 255, 255, 0.4); 
+  border-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.GlobinCave{
+  background: rgba(52, 83, 61, 0.3); 
+  color: rgba(255, 255, 255, 0.4); 
+  border-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.IceCavern{
+  background: rgba(91, 122, 146, 0.3); 
+  color: rgba(255, 255, 255, 0.4); 
+  border-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.IceAbyss{
+  background: rgba(32, 43, 88, 0.3); 
+  color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Dungeon-variant-button {
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  margin: 0;
+  padding-inline: 10px;
+  padding-block: 0;
+  color: rgba(238, 238, 238, 0.85);
+  font-size: 14px;
+  line-height: 30px;
+  background: #2B2B2B;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  border-block-start-width: 1.02px;
+  border-inline-start-width: 0;
+  border-inline-end-width: 1px;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.Crypt:hover,
+.Crypt.selected{
+  background: rgb(146, 113, 67); 
+  color: rgb(255, 255, 255); 
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.Inferno:hover,
+.Inferno.selected{
+  background: rgb(95, 5, 5); 
+  color: rgb(255, 255, 255); 
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.GlobinCave:hover,
+.GlobinCave.selected{
+  background: rgb(52, 83, 61);
+  color: rgb(255, 255, 255); 
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.IceCavern:hover,
+.IceCavern.selected{
+  background: rgb(91, 122, 146); 
+  color: rgb(255, 255, 255); 
+  border-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.IceAbyss:hover,
+.IceAbyss.selected{
+  background: rgb(32, 43, 88);
+  color: rgb(255, 255, 255); 
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Estilo dos botões de seleção de marcadores */
+.marker-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  text-align: left;
+}
+
+.marker-button.active {
+  background-color: #e6f7ff;
+  border-color: #91d5ff;
+}
+
+/* Estilos para o colapso */
+.ant-collapse-item {
+  border: 2px solid #ddd;
+  border-radius: 2px;
+}
+
+.ant-collapse-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #2B2B2B;
+  cursor: pointer;
+}
+
+.ant-collapse-header:hover {
+  background-color: #333C49;
+}
+
+.ant-collapse-expand-icon {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.ant-collapse-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.ant-collapse-arrow.up {
+  transform: rotate(0deg);
+}
+
+.ant-collapse-arrow.down {
+  transform: rotate(90deg);
+}
+
+.ant-collapse-header[aria-expanded='true'] .ant-collapse-arrow {
+  transform: rotate(90deg);
+}
+
+.ant-collapse-header-text {
+  flex: 1;
+  font-size: 14px;
+  color: black;
+}
+
+.ant-collapse-extra {
+  margin-left: auto;
+}
+
+.ant-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  color: #1890ff;
+  cursor: pointer;
+}
+
+.ant-btn:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo do colapso */
+.ant-collapse-content {
+  padding: 10px;
+  background-color: #555555;
+}
+
+.ant-collapse-content-active {
+  display: block;
+}
+
+.ant-collapse-content-inactive {
+  display: none;
+}
+
+.ant-collapse-content-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilo dos ícones */
+.selected-icon svg {
+  fill: #1890ff;
+}
+
+/* Estilo dos checkboxes */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Ajuste adicional para botões de marcadores */
+.markers-button {
+  display: flex;
+}
+
+/* Estilos específicos para os botões de selecionar e desmarcar todos */
+.marker-buttons {
+  margin-bottom: 10px;
+}
+
+.select-all-button,
+.deselect-all-button {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #28a745; /* Verde para o botão de selecionar */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.select-all-button:hover {
+  background-color: #218838; /* Verde mais escuro */
+}
+
+.deselect-all-button {
+  background-color: #dc3545; /* Vermelho para o botão de desmarcar */
+}
+
+.deselect-all-button:hover {
+  background-color: #c82333; /* Vermelho mais escuro */
+}
+
+/* Estilos adicionais para os detalhes dos marcadores */
+.infor {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.infor svg {
+  width: 32px;
+  height: 32px;
+  fill: none;
+  margin-right: 8px;
+}
+
+.infor span {
+  margin-left: 8px;
+}

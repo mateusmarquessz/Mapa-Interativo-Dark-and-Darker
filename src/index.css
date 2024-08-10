@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+body {
+  font-family: 'Cinzel', serif;
+}
+
+
+.checkboxes-container {
+    max-height: fit-content;
+    max-width: fit-content;
+  }
+  
+  .map-container {
+    position: absolute;
+  }
+  
+  .ButtonStyle {
+    height: 20px;
+  }
+  
+  .leaflet-tooltip.fixed-size-popup {
+    background-color: rgba(40, 40, 40, 0.5);
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 10px;
+    color: #ddd;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .fixed-size-popup b {
+    color: #ddd;
+  }
+  
+  .fixed-size-popup th {
+    background-color: #34446c;
+    color: #ddd;
+  }
+  
+  .leaflet-tooltip {
+    border: 1px solid rgb(239, 229, 229) !important;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 20px;
+    background-color: rgba(51, 60, 73, 0.99) !important;
+    color: white;
+  }
+  
+  .selected-icon {
+    filter: none;
+    opacity: 1;
+  }
+  .unselected-text {
+    color: grey;
+  }
+  

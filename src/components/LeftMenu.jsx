@@ -1,10 +1,15 @@
 import React from 'react';
-import './Menu.css';
+import './LeftMenu.css';
+
 const LeftMenu = () => {
   return (
     <div className="menu left-menu">
-      {/* Conteúdo do menu da esquerda */}
-      Menu Esquerdo
+      <div className="logo-container">
+        <img src='https://darkanddarker.wiki.spellsandguns.com/images/c/c9/Dark-and-darker-main.png' alt="Logo do Jogo" className="logo" />
+      </div>
+      <div className="site-name">
+        Mapa Interativo
+      </div>
     </div>
   );
 };
