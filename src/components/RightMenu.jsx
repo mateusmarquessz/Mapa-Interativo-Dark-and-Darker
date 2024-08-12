@@ -69,7 +69,6 @@ const RightMenu = ({ onMapChange, onMarkersChange }) => {
     onMarkersChange([]);
   };
 
-  // Filter variants based on selected map
   const availableVariants = mapVariants.filter(variant => variant.parentId === selectedMap);
 
   return (
@@ -140,7 +139,7 @@ const RightMenu = ({ onMapChange, onMarkersChange }) => {
             <div className="ant-collapse-extra">
               <button 
                 type="button" 
-                className="ant-btn css-6bq67f ant-btn-default"
+                className="ant-btn"
                 onClick={() => handleMarkerToggle(marker.id)}
               >
                 <span>{selectedMarkers.includes(marker.id) ? 'Deselect All' : 'Select All'}</span>
